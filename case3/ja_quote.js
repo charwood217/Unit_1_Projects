@@ -13,12 +13,15 @@
    quotation tag in the Web page.
 
 */
-randomInt(0,10);
+//Makes quotes 0-10 and returns thier value
 function randomInt(lowest, size){
-   Math.floor(Math.random() * size + lowest);
+   return Math.floor(Math.random() * size + lowest);
 }
+//displays the qoute in the HTML
 var randomQ = randomInt(0,10)
-var quoteElem = #;
+var quoteElem = document.getElementsByTagName("quote")[0];
+quoteElem.innerHTML = getQuote(randomQ);
+
 function getQuote(n) {
    var quotes = [
    "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
