@@ -1,3 +1,4 @@
+"use strict";
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
@@ -12,8 +13,12 @@
    quotation tag in the Web page.
 
 */
-
-
+randomInt(0,10);
+function randomInt(lowest, size){
+   Math.floor(Math.random() * size + lowest);
+}
+var randomQ = randomInt(0,10)
+var quoteElem = #;
 function getQuote(n) {
    var quotes = [
    "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
